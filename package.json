@@ -1,11 +1,11 @@
 {
   "name": "radiodan-broker",
-  "version": "1.3.0",
+  "version": "1.6.0",
   "description": "Easily install the radiodan broker binary",
   "main": "index.js",
   "bin": "./broker",
   "scripts": {
-    "preinstall": "node link-correct-binary",
+    "postinstall": "node link-correct-binary",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",

@@ -15,6 +15,10 @@ if (process.arch === 'arm') {
   }
 }
 
+if (process.arch === 'x64' && process.platform === 'linux') {
+  link('amd64');
+}
+
 console.error('Broker is not pre-compiled for your platform :-(');
 fail();
 
