@@ -23,6 +23,7 @@ function link(version) {
   console.log('Linking broker binary for ', name);
   var target = join(__dirname, 'binaries', name);
   var link = join(__dirname, 'broker');
+  fs.unlinkSync(link);
   fs.symlinkSync(target, link);
   ok();
 }

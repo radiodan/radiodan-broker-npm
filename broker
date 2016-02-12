@@ -1,0 +1,4 @@
+#!/usr/bin/env node
+
+console.log('This is a placeholder for the radiodan-broker binary.');
+console.log('If you\'re seeing this then something has gone wrong.');
