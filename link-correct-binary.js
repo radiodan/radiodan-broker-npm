@@ -2,7 +2,7 @@
 var fs = require('fs');
 var join = require('path').join;
 
-var ARM_ARCH_MATCHER = /CPU architecture[ ]*:[ ]*([0-9])/i;
+var ARM_ARCH_MATCHER = /ARMv(6|7)/i;
 
 if (process.platform === 'darwin') {
   link('osx');
@@ -12,6 +12,8 @@ if (process.arch === 'arm') {
   var arch = armArch();
   if (arch === 7) {
     link('arm7');
+  } else if (arch === 6) {
+    link('arm6');
   }
 }
 

@@ -1,6 +1,6 @@
 {
   "name": "radiodan-broker",
-  "version": "1.6.0",
+  "version": "1.7.0",
   "description": "Easily install the radiodan broker binary",
   "main": "index.js",
   "bin": "./broker",
